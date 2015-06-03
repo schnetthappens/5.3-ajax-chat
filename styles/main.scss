@@ -23,6 +23,11 @@ body {
   color: $base-font-color;
 }
 
+hr {
+  width: 80%;
+  margin: 1em auto;
+}
+
   .page-header {
     height: 75px;
     background-color: #A5C663;
@@ -32,7 +37,7 @@ body {
     margin: 50px auto;
     width: 435px;
     height: auto;
-    border: 1px solid #A5C663;
+    /* border: 1px solid #A5C663; */
     border-radius: 5px;
   }
 
@@ -54,8 +59,13 @@ body {
       text-transform: uppercase;
     }
 
+    .login-form p {
+      text-align: center;
+      margin-top: 1.5em;
+    }
+
     .login-form-username {
-      margin-top: 3em;
+      margin-top: 1em;
     }
 
     .submit-form {
@@ -64,6 +74,10 @@ body {
       border: 1px solid #fff;
       border-radius: 20px;
       text-transform: uppercase;
+    }
+
+    .login-other p {
+      text-align: center;
     }
 
 
@@ -100,7 +114,7 @@ body {
 
         .type-message {
           width: 100%;
-          border: 3px solid #A5C663;
+          border: 3px solid #E6E6E6;
         }
 
         .send-message {
