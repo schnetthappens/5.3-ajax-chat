@@ -1,3 +1,6 @@
+$box-sizing: true;
+$gutter: 0em;
+
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
@@ -19,3 +22,45 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
 }
+
+  .page-header {
+    height: 75px;
+    background-color: #A5C663;
+  }
+
+  .application {
+    margin: 50px auto;
+    width: 435px;
+    height: auto;
+    border: 1px solid #A5C663;
+    border-radius: 5px;
+  }
+
+    .login-facebook,
+    .login-form-username,
+    .login-form-password,
+    .submit-form {
+      width: 90%;
+      height: 50px;
+      margin: 10px 20px 10px 20px;
+    }
+
+    .login-facebook {
+      color: #fff;
+      background-color: #3B5998;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    .login-form-username {
+      margin-top: 3em;
+    }
+
+    .submit-form {
+      color: #fff;
+      background-color: #A5C663;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
