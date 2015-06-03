@@ -28,7 +28,7 @@ body {
     background-color: #A5C663;
   }
 
-  .application {
+  .form-container {
     margin: 50px auto;
     width: 435px;
     height: auto;
@@ -39,7 +39,8 @@ body {
     .login-facebook,
     .login-form-username,
     .login-form-password,
-    .submit-form {
+    .submit-form,
+    .send-message {
       width: 90%;
       height: 50px;
       margin: 10px 20px 10px 20px;
@@ -64,3 +65,49 @@ body {
       border-radius: 20px;
       text-transform: uppercase;
     }
+
+
+    .chat-container {
+      @include outer-container(1024px);
+      background-color: #fff;
+      height: auto;
+      margin: 3em auto;
+    }
+
+      .view-active-users {
+        @include span-columns(3);
+        height: 800px;
+        background-color: #A5C663;
+      }
+
+      .message-container {
+        @include span-columns(9);
+      }
+
+        .view-messages {
+          height: 450px;
+          margin: 2em 2em;
+          background-color: #fff;
+          border: 1px solid #E6E6E6;
+        }
+
+        .create-message {
+          height: auto;
+          margin: 1em 2em;
+          background-color: #fff;
+          /* border: 3px solid #A5C663; */
+        }
+
+        .type-message {
+          width: 100%;
+          border: 3px solid #A5C663;
+        }
+
+        .send-message {
+          color: #fff;
+          margin-left: 2.5em;
+          background-color: #A5C663;
+          border: 1px solid #fff;
+          border-radius: 20px;
+          text-transform: uppercase;
+        }
