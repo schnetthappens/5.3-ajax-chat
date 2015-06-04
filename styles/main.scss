@@ -1,3 +1,6 @@
+$box-sizing: true;
+$gutter: 0em;
+
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
@@ -19,3 +22,106 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
 }
+
+hr {
+  width: 80%;
+  margin: 1em auto;
+}
+
+  .page-header {
+    height: 75px;
+    background-color: #A5C663;
+  }
+
+  .form-container {
+    margin: 50px auto;
+    width: 435px;
+    height: auto;
+    /* border: 1px solid #A5C663; */
+    border-radius: 5px;
+  }
+
+    .login-facebook,
+    .login-form-username,
+    .login-form-password,
+    .submit-form,
+    .send-message {
+      width: 90%;
+      height: 50px;
+      margin: 10px 20px 10px 20px;
+    }
+
+    .login-facebook {
+      color: #fff;
+      background-color: #3B5998;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    .login-form p {
+      text-align: center;
+      margin-top: 1.5em;
+    }
+
+    .login-form-username {
+      margin-top: 1em;
+    }
+
+    .submit-form {
+      color: #fff;
+      background-color: #A5C663;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    .login-other p {
+      text-align: center;
+    }
+
+
+    .chat-container {
+      @include outer-container(1024px);
+      background-color: #fff;
+      height: auto;
+      margin: 3em auto;
+    }
+
+      .view-active-users {
+        @include span-columns(3);
+        height: 800px;
+        background-color: #A5C663;
+      }
+
+      .message-container {
+        @include span-columns(9);
+      }
+
+        .view-messages {
+          height: 450px;
+          margin: 2em 2em;
+          background-color: #fff;
+          border: 1px solid #E6E6E6;
+        }
+
+        .create-message {
+          height: auto;
+          margin: 1em 2em;
+          background-color: #fff;
+          /* border: 3px solid #A5C663; */
+        }
+
+        .type-message {
+          width: 100%;
+          border: 3px solid #E6E6E6;
+        }
+
+        .send-message {
+          color: #fff;
+          margin-left: 2.5em;
+          background-color: #A5C663;
+          border: 1px solid #fff;
+          border-radius: 20px;
+          text-transform: uppercase;
+        }
