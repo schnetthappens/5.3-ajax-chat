@@ -6,6 +6,7 @@
   $(document).ready(function(){
 
     route();
+    logListOfMessages();
 
     $(document).on('submit', '.login-form', function(event){
       event.preventDefault();
@@ -34,5 +35,14 @@
     $('.application').html(JST['chat']());
     console.log('username:', username);
   }
+
+  function logListOfMessages() {
+    $.ajax({
+      url: "http://tiny-lasagna-server.herokuapp.com/collections/messages/",
+    }).then(function(response) {
+        console.log(response);
+      });
+    };
+
 
 })();
