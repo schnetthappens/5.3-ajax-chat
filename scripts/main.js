@@ -37,18 +37,39 @@
     }).then(renderChat);
   }
 
-
-  function renderChat(data) { //pass messagees to renderChat
+  function renderChat(data) { //pass messages to renderChat
     $('.application').html(JST['chat'](data));
+  }
+
+  setInterval(function() {
+      $.ajax({
+        url: "http://tiny-lasagna-server.herokuapp.com/collections/messages/"
+      }).then(renderChat);
+    }, 30000);
   }
 
 
 
 
+// $(document).on('submit', '.type-message', function(event) {
+//   event.preventDefault();
+//   $.ajax{(
+//     url: "http://tiny-lasagna-server.herokuapp.com/collections/messages/",
+//     type: POST,
+//     username: username,
+//     created_at: new Date,
+//     content:
+//
+//   )}
+//
+// })
 
 
 
 
 
 
-})();
+
+
+
+)();
